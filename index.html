@@ -3,56 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ติดต่อ | My Portfolio</title>
+    <title>กิจกรรมและเกียรติบัตร | My Portfolio</title>
     <script src="https://jsdelivr.net"></script>
 </head>
 <body class="bg-slate-50 text-slate-800 font-sans min-h-screen flex flex-col justify-between">
 
-    <nav class="bg-white/80 backdrop-blur-md sticky top-0 z-50 border-b border-slate-200 px-6 py-4 flex justify-between items-center">
-        <div class="font-bold text-xl text-indigo-600 tracking-wide">MyPortfolio.</div>
-        <div class="hidden md:flex space-x-8 font-medium">
-            
-            <a href="personal.html" class="hover:text-indigo-600 transition">ประวัติส่วนตัว</a>
-            <a href="education.html" class="hover:text-indigo-600 transition">ประวัติการศึกษา</a>
-            <a href="activities.html" class="hover:text-indigo-600 transition">ผลงาน</a>
-            <a href="activities.htm2" class="hover:text-indigo-600 transition">กิจกรรม</a>
-            <a href="contact.html" class="text-indigo-600">ติดต่อ</a>
+    <!-- Navigation Bar -->
+    <nav class="bg-white/80 backdrop-blur-md sticky top-0 z-50 border-b border-slate-200 px-8 py-4">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <a href="personal.html" class="font-bold text-xl text-indigo-600 tracking-wide">MyPortfolio.</a>
+            <div class="flex space-x-8 font-medium">
+                <a href="personal.html" class="hover:text-indigo-600 transition">ประวัติส่วนตัว</a>
+                <a href="education.html" class="hover:text-indigo-600 transition">ประวัติการศึกษา</a>
+                <a href="projects.html" class="hover:text-indigo-600 transition">ผลงาน</a>
+                <a href="activities.html" class="text-indigo-600 font-semibold">กิจกรรม</a>
+                <a href="contact.html" class="hover:text-indigo-600 transition">ติดต่อ</a>
+            </div>
         </div>
     </nav>
 
-    <main class="max-w-xl mx-auto px-6 py-12 flex-grow w-full flex flex-col justify-center">
-        <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100">
-            <h2 class="text-2xl font-bold text-slate-900 mb-6 text-center">ช่องทางการติดต่อ</h2>
+    <!-- Main Content -->
+    <main class="max-w-4xl mx-auto px-6 py-12 flex-grow w-full">
+        <div class="mb-12 text-center">
+            <span class="bg-indigo-50 text-indigo-700 text-xs font-semibold px-2.5 py-1 rounded-full uppercase tracking-wider">Activities</span>
+            <h2 class="text-3xl font-bold text-slate-900 mt-2">กิจกรรมและเกียรติบัตร</h2>
+            <p class="text-slate-500 text-sm mt-1">ประวัติการเข้าร่วมค่าย อบรม และกิจกรรมส่งเสริมการเรียนรู้</p>
+        </div>
+        
+        <!-- โครงสร้าง Timeline แนวดิ่ง -->
+        <div class="relative border-l-2 border-slate-200 ml-32 space-y-12">
             
-            <div class="space-y-4 mb-8">
-                <div class="flex items-center gap-3 text-slate-600">
-                    <span class="font-semibold text-slate-800">Email:</span> student@example.com
+            <!-- กิจกรรมที่ 1 -->
+            <div class="relative pl-10">
+                <!-- ตัวบอกเวลาด้านซ้ายสุด -->
+                <div class="absolute -left-[140px] top-1.5 w-24 text-right">
+                    <span class="text-sm font-bold text-indigo-600">ตุลาคม 2025</span>
                 </div>
-                <div class="flex items-center gap-3 text-slate-600">
-                    <span class="font-semibold text-slate-800">GitHub:</span> ://github.com
+                <!-- จุดวงกลมบนเส้น Timeline -->
+                <div class="absolute -left-[7px] top-2 w-3 h-3 bg-indigo-600 rounded-full border-4 border-white ring-2 ring-indigo-100"></div>
+                <!-- กล่องรายละเอียดกิจกรรม -->
+                <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-xs flex gap-6 items-center">
+                    <div class="w-32 h-24 bg-slate-100 rounded-xl overflow-hidden flex-shrink-0">
+                        <img src="https://unsplash.com" alt="Activity 1" class="w-full h-full object-cover">
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg text-slate-900">เข้าร่วมค่าย ComCamp ครั้งที่ 20</h3>
+                        <p class="text-slate-500 text-sm mt-0.5">ณ มหาวิทยาลัยเทคโนโลยีชื่อดัง</p>
+                        <p class="text-slate-600 text-sm mt-2 leading-relaxed">ได้รับโอกาสศึกษาพื้นฐานเครือข่ายคอมพิวเตอร์ คอมพิวเตอร์กราฟิก และลงมือปฏิบัติการเขียนโปรแกรมควบคุมบอร์ดไมโครคอนโทรลเลอร์</p>
+                    </div>
                 </div>
             </div>
 
-            <form class="space-y-4">
-                <div>
-                    <label class="block text-sm font-medium text-slate-700 mb-1">ชื่อผู้ติดต่อ</label>
-                    <input type="text" class="w-full px-4 py-2 rounded-xl border border-slate-200 focus:outline-none focus:border-indigo-500 text-sm">
+            <!-- กิจกรรมที่ 2 -->
+            <div class="relative pl-10">
+                <div class="absolute -left-[140px] top-1.5 w-24 text-right">
+                    <span class="text-sm font-bold text-slate-400">สิงหาคม 2025</span>
                 </div>
-                <div>
-                    <label class="block text-sm font-medium text-slate-700 mb-1">ข้อความ</label>
-                    <textarea rows="4" class="w-full px-4 py-2 rounded-xl border border-slate-200 focus:outline-none focus:border-indigo-500 text-sm"></textarea>
+                <div class="absolute -left-[7px] top-2 w-3 h-3 bg-slate-300 rounded-full border-4 border-white ring-2 ring-slate-100"></div>
+                <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-xs flex gap-6 items-center">
+                    <div class="w-32 h-24 bg-slate-100 rounded-xl overflow-hidden flex-shrink-0">
+                        <img src="https://unsplash.com" alt="Activity 2" class="w-full h-full object-cover">
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg text-slate-900">การประกวดโครงงานวิทยาศาสตร์ระดับภาค</h3>
+                        <p class="text-slate-500 text-sm mt-0.5">ศูนย์วิทยาศาสตร์เพื่อการศึกษา</p>
+                        <p class="text-slate-600 text-sm mt-2 leading-relaxed">ส่งชิ้นงานสิ่งประดิษฐ์ระบบคำนวณอัจฉริยะเข้าร่วมประกวด ได้รับรางวัลรองชนะเลิศอันดับ 2 และฝึกฝนทักษะการนำเสนอผลงานต่อหน้ากรรมการ</p>
+                    </div>
                 </div>
-                <button type="button" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-2.5 rounded-xl transition text-sm">
-                    ส่งข้อความ
-                </button>
-            </form>
+            </div>
+
         </div>
     </main>
 
+    <!-- Footer -->
     <footer class="text-center py-6 text-sm text-slate-400 border-t border-slate-200 bg-white">
         © 2026 Developed by Me via GitHub Pages
     </footer>
 
 </body>
 </html>
-
