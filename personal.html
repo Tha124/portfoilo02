@@ -1,1 +1,477 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>ประวัติส่วนตัว | ธยากร ภาวัน</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+
+/* พื้นหลังเคลื่อนไหว */
+
+body{
+
+    min-height:100vh;
+
+    background:linear-gradient(
+        -45deg,
+        #0f172a,
+        #1e3a8a,
+        #2563eb,
+        #38bdf8
+    );
+
+    background-size:400% 400%;
+
+    animation:bgAnimation 12s ease infinite;
+
+    color:white;
+
+}
+
+
+/* Animation พื้นหลัง */
+
+@keyframes bgAnimation{
+
+    0%{
+        background-position:0% 50%;
+    }
+
+    50%{
+        background-position:100% 50%;
+    }
+
+    100%{
+        background-position:0% 50%;
+    }
+
+}
+
+
+
+/* เมนู */
+
+nav{
+
+    padding:20px;
+
+    background:rgba(0,0,0,0.3);
+
+    backdrop-filter:blur(10px);
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:25px;
+
+    position:sticky;
+
+    top:0;
+
+}
+
+
+nav a{
+
+    color:white;
+
+    text-decoration:none;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+
+nav a:hover{
+
+    color:#38bdf8;
+
+}
+
+
+
+/* กล่องข้อมูล */
+
+.container{
+
+    width:90%;
+
+    max-width:900px;
+
+    margin:50px auto;
+
+    padding:40px;
+
+
+    background:rgba(255,255,255,.1);
+
+    backdrop-filter:blur(15px);
+
+    border-radius:25px;
+
+
+    box-shadow:
+    0 10px 40px rgba(0,0,0,.4);
+
+
+    animation:show .8s ease;
+
+}
+
+
+
+@keyframes show{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+
+/* รูป */
+
+.profile{
+
+    width:200px;
+
+    height:200px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    border:5px solid white;
+
+
+    box-shadow:
+
+    0 0 30px #38bdf8;
+
+
+    transition:.5s;
+
+}
+
+
+
+.profile:hover{
+
+    transform:scale(1.1);
+
+}
+
+
+
+/* หัวข้อ */
+
+h1{
+
+    margin-top:25px;
+
+    font-size:40px;
+
+}
+
+
+h2{
+
+    margin-top:30px;
+
+    color:#bae6fd;
+
+}
+
+
+
+p{
+
+    margin-top:15px;
+
+    font-size:18px;
+
+    line-height:1.8;
+
+}
+
+
+
+/* กล่องข้อมูลย่อย */
+
+
+.info{
+
+    margin-top:30px;
+
+    display:grid;
+
+    gap:15px;
+
+}
+
+
+
+.card{
+
+    padding:20px;
+
+    background:rgba(255,255,255,.12);
+
+    border-radius:15px;
+
+    transition:.3s;
+
+}
+
+
+
+.card:hover{
+
+    transform:translateY(-5px);
+
+    background:rgba(255,255,255,.2);
+
+}
+
+
+
+/* ปุ่ม */
+
+
+.button{
+
+    display:inline-block;
+
+    margin-top:30px;
+
+    padding:12px 35px;
+
+
+    background:white;
+
+    color:#1e3a8a;
+
+
+    border-radius:30px;
+
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+
+    transition:.3s;
+
+}
+
+
+
+.button:hover{
+
+    background:#38bdf8;
+
+    color:white;
+
+}
+
+
+
+/* footer */
+
+
+footer{
+
+    text-align:center;
+
+    padding:20px;
+
+    background:rgba(0,0,0,.3);
+
+}
+
+
+
+/* มือถือ */
+
+@media(max-width:700px){
+
+
+nav{
+
+    flex-wrap:wrap;
+
+}
+
+
+h1{
+
+    font-size:30px;
+
+}
+
+
+.container{
+
+    padding:25px;
+
+}
+
+
+}
+
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<nav>
+
+<a href="index.html">หน้าหลัก</a>
+
+<a href="personal.html">ประวัติส่วนตัว</a>
+
+<a href="education.html">การศึกษา</a>
+
+<a href="activities.html">ผลงาน</a>
+
+<a href="contact.html">ติดต่อ</a>
+
+</nav>
+
+
+
+<div class="container">
+
+
+<center>
+
+<img 
+src="images/WIN_20260717_11_35_49_Pro.jpg"
+class="profile"
+alt="รูปโปรไฟล์">
+
+
+<h1>
+นาย ธยากร ภาวัน
+</h1>
+
+
+<h2>
+ประวัติส่วนตัว
+</h2>
+
+
+</center>
+
+
+
+<div class="info">
+
+
+<div class="card">
+
+<h3>ข้อมูลส่วนตัว</h3>
+
+<p>
+ชื่อ : ธยากร ภาวัน<br>
+ระดับชั้น : มัธยมศึกษาปีที่ 6<br>
+โรงเรียน : พานทอง<br>
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>ความสนใจ</h3>
+
+<p>
+
+สนใจด้านวิศวกรรมอิเล็กทรอนิกส์<br>
+
+การซ่อมแซมแผงวงจรไฟฟ้า<br>
+
+การเขียนโปรแกรมควบคุมไมโครคอนโทรลเลอร์<br>
+
+การสร้างและควบคุมแขนหุ่นยนต์
+
+</p>
+
+</div>
+
+
+
+
+<div class="card">
+
+<h3>เป้าหมายในอนาคต</h3>
+
+<p>
+
+ต้องการศึกษาต่อด้านวิศวกรรม
+เพื่อพัฒนาความรู้เกี่ยวกับระบบอิเล็กทรอนิกส์
+ระบบควบคุม และเทคโนโลยีหุ่นยนต์
+
+</p>
+
+</div>
+
+
+
+</div>
+
+
+
+<a href="index.html" class="button">
+กลับหน้าหลัก
+</a>
+
+
+</div>
+
+
+
+<footer>
+
+© 2026 Portfolio | Thayakorn Phawan
+
+</footer>
+
+
+
+</body>
+</html>
